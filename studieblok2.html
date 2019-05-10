@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Studieblok 2</title>
+  </head>
+  <body>
+
+    <h3>Opdracht 1:</h3>
+    <p id="inhoud"></p>
+    <p id="oppervlakte"></p>
+    <p id="plaats"></p>
+    <p id="woningsoort"></p>
+
+    <script>
+      var huis = {inhoud:"100dm3",
+      oppervlakte:"16m2",
+      plaats:"Assen",
+      woningsoort:"Appartement"
+    }
+
+    document.getElementById('inhoud').innerHTML = "Inhoud: " + huis.inhoud;
+    document.getElementById('oppervlakte').innerHTML = "Oppervlakte: " + huis.oppervlakte;
+    document.getElementById('plaats').innerHTML = "Plaats: " + huis.plaats;
+    document.getElementById('woningsoort').innerHTML = "Woningsoort: " + huis.woningsoort;
+
+    </script>
+
+    <h3>Opdracht 2:</h3>
+    <p id="len"></p>
+    <p id="index"></p>
+    <p id="checkfor"></p>
+    <p id="slice"></p>
+    <p id="progr">Applicatie Ontwikkelaar</p>
+    <button onclick="Functie()">Klik hier!</button>
+    <p id="app"></p>
+
+    <script>
+      var zin = "applicatie ontwikkelaar";
+
+      document.getElementById('len').innerHTML = "String lengte: " + zin.length;
+      document.getElementById('index').innerHTML = "Locatie van 'ontwikkelaar': " + zin.indexOf("ontwikkelaar");
+      document.getElementById('checkfor').innerHTML = zin.search("wikkelaar");
+      document.getElementById('slice').innerHTML = zin.slice(14,17)
+      function Functie() {
+        var str = document.getElementById('progr').innerHTML;
+        var replace = str.replace("Ontwikkelaar", "Programmeur");
+        document.getElementById('progr').innerHTML = replace;
+      }
+      document.getElementById('app').innerHTML = zin.toUpperCase();
+
+    </script>
+
+    <h3>Opdracht 3:</h3>
+
+    <script>
+      var woord = "opleiding";
+
+
+      for (var i= 0; i < woord.length; i += 1) {
+        console.log(woord[i].charAt(0));
+      }
+    </script>
+
+  </body>
+</html>
