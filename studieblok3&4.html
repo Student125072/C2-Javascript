@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Studieblok 3 en 4</title>
+  </head>
+  <body>
+
+    <!-- Button voor naam weergave -->
+    <p id="naam"></p>
+    <button onclick="naamWeergeven()">Naam weergeven</button>
+
+    <!-- Script voor naam weergave -->
+    <script>
+
+      function naamWeergeven() {
+        var naam = "Kevin";
+
+        document.getElementById('naam').innerHTML = naam;
+      }
+
+    </script>
+
+    <!-- Button voor HELLO WORLD -->
+    <div id="hellodiv" onmouseover('text()')>
+      <p id="hello"></p>
+    </div>
+    <button onclick="helloWorld()">Mysterieus</button>
+
+    <!-- Script voor HELLO WORLD -->
+    <script>
+
+      function helloWorld() {
+        var message = "Hello World!"
+
+        document.getElementById('hello').innerHTML = message;
+
+      }
+
+      function text() {
+        document.getElementById('hellodiv').onmouseover = message.italics();
+      }
+
+    </script>
+
+
+
+
+  </body>
+</html>
