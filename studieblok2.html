@@ -59,7 +59,7 @@
       var woord = "opleiding";
 
       ben hier mee bezig
-      
+
       for (var i= 0; i < woord.length; i += 1) {
         console.log(woord[i].charAt(0));
       }
@@ -75,15 +75,37 @@
 
     <h3>Opdracht 5:</h3>
     <!-- Kevin -->
-<<<<<<< HEAD
+    <p id="naam"></p>
+    <p id="while"></p>
+
     <script>
 
-    var namen = ["", "", ""]
+    var namen = new Array();
+    namen[0] = "Zoe";
+    namen[1] = "Bram";
+    namen[2] = "Clarissa";
+    namen[3] = "Isa";
+    namen[4] = "Gerrie";
+    namen[5] = "Kevin";
 
+    var naamtekst = "";
+
+    for(i = 0; i < namen.length; i++) {
+      naamtekst += namen[i] + "<br>";
+    }
+    document.getElementById('naam').innerHTML = naamtekst;
+
+    var i = 0;
+    var tekst = "";
+
+    while (namen[i]) {
+      tekst += namen[i] + "<br>";
+      i++;
+    }
+    document.getElementById('while').innerHTML = tekst;
     </script>
-=======
 
->>>>>>> master
+
 
 
 
