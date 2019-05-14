@@ -76,6 +76,51 @@
 
     <h3>Opdracht 5:</h3>
     <!-- Kevin -->
+    <p id="naam"></p>
+    <p id="while"></p>
+    <p id="nTostring"></p>
+    <p id="arraylength"></p>
+    <p id="allname"></p>
+    <p id="alphabet"></p>
+
+    <script>
+
+    var namen = new Array();
+    namen[0] = "Zoe";
+    namen[1] = "Bram";
+    namen[2] = "Clarissa";
+    namen[3] = "Isa";
+    namen[4] = "Gerrie";
+
+    var naamtekst = "";
+
+    for(i = 0; i < namen.length; i++) {
+      // invullen van variabele naamtekst
+      naamtekst += namen[i] + "<br>";
+    }
+
+
+    var i = 0;
+    var tekst = "";
+
+    while (namen[i]) {
+      // invullen van de variabele tekst
+      tekst += namen[i] + "<br>";
+      i++;
+    }
+    document.getElementById('while').innerHTML = tekst;
+
+    // converteert de array naar een string, waardoor het automatisch door een komma gescheiden word.
+    document.getElementById('nTostring').innerHTML = namen.toString();
+
+    // arraylengte laten zien
+    document.getElementById('arraylength').innerHTML = namen.length;
+
+    // naam toevoegen aan de array
+    namen.push("Kevin");
+
+    </script>
+
 
 
 
