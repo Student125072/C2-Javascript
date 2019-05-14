@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Studieblok 3 & 4</title>
+    <style>
+      .opdr4 {
+        background-color: grey;
+      }
+    </style>
   </head>
   <body>
 
@@ -16,6 +21,59 @@
 
     <h3>Opdracht 2:</h3>
     <!-- Kevin -->
+    <p id="helloworld"></p>
+    <button onclick="helloWorld()">Hello World!</button>
+
+    <script>
+
+    function helloWorld() {
+      document.getElementById('helloworld').innerHTML = "Hello World!";
+    }
+
+    </script>
+
+    <h3>Opdracht 3:</h3>
+    <!-- Jesper -->
+
+
+
+
+
+
+    <h3>Opdracht 4:</h3>
+    <!-- Kevin -->
+    <div class="opdr4" onclick="bold()"> <p id="t1"></p> </div>
+
+    <div class="opdr4" onclick="bold()"> <p id="t2"></p> </div>
+
+    <div class="opdr4" onclick="bold()"> <p id="t3"></p> </div>
+
+    <div class="opdr4" onclick="bold()"> <p id="t4"></p> </div>
+
+    <div class="opdr4" onclick="bold()"> <p id="t5"></p> </div>
+
+    <script>
+    var inserttext = "Klikken = bold | Shift+Click = normaal";
+
+      function bold() {
+
+      }
+
+
+      // function bold() {
+      //   document.getElementById('t4').innerHTML = inserttext.bold();
+      //   if (event.shiftKey) {
+      //     document.getElementById('t4').innerHTML = inserttext;
+      //   }
+      //
+      // }
+
+    </script>
+
+
+
+
+
 
 
   </body>
