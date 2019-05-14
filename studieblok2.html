@@ -54,15 +54,16 @@
     </script>
 
     <h3>Opdracht 3:</h3>
-    <!-- Kevin -->
+    <!-- Kevin & Jesper -->
+    <p id="count"> </p>
     <script>
-      var woord = "opleiding";
-
-      ben hier mee bezig
-      
-      for (var i= 0; i < woord.length; i += 1) {
-        console.log(woord[i].charAt(0));
-      }
+    var str = "opleiding";
+    var lFl = "";
+    for (var i = 0; i < str.length; i++) {
+      var res = str.charAt(i)
+      lFl += res + "<br>";
+    }
+    document.getElementById("count").innerHTML = lFl;
     </script>
 
       <h3> Opdracht 4: </h3>
