@@ -93,6 +93,8 @@
     namen[4] = "Gerrie";
 
     var naamtekst = "";
+    //toevoegen van eigen naam
+    namen.push("Kevin");
 
     for(i = 0; i < namen.length; i++) {
       // invullen van variabele naamtekst
@@ -116,7 +118,11 @@
     // arraylengte laten zien
     document.getElementById('arraylength').innerHTML = namen.length;
 
-    // naam toevoegen aan de array
+    //alle namen laten zien met # er tussen
+    document.getElementById('allname').innerHTML = namen.join("#");
+
+    //sorteren op alfabetische volgorde
+    document.getElementById('alphabet').innerHTML = namen.sort();
 
     </script>
 
