@@ -61,36 +61,65 @@
     </script>
 
 
-
     <h3>Opdracht 4:</h3>
     <!-- Kevin -->
-    <div class="opdr4" onclick="bold()"> <p id="t1"></p> </div>
 
-    <div class="opdr4" onclick="bold()"> <p id="t2"></p> </div>
-
-    <div class="opdr4" onclick="bold()"> <p id="t3"></p> </div>
-
-    <div class="opdr4" onclick="bold()"> <p id="t4"></p> </div>
-
-    <div class="opdr4" onclick="bold()"> <p id="t5"></p> </div>
+    <div id="fir">Klik op deze tekst</div>
+    <div id="sec">Klik op deze tekst</div>
+    <div id="thir">Klik op deze tekst</div>
+    <div id="fou">Klik op deze tekst</div>
+    <div id="fif">Klik op deze tekst</div>
 
     <script>
-    var inserttext = "Klikken = bold | Shift+Click = normaal";
 
-      function bold() {
+    var norm = "Klik op deze tekst";
+    var repl = "Shift-Klik op deze tekst";
+    var fir = document.getElementById('fir');
+    var sec = document.getElementById('sec');
+    var thir = document.getElementById('thir');
+    var fou = document.getElementById('fou');
+    var fif = document.getElementById('fif');
 
+    fir.onclick = function first() {
+      fir.innerHTML = repl.bold();
+      if (event.shiftKey) {
+        fir.innerHTML = norm;
       }
+    }
+
+    sec.onclick = function sec() {
+      sec.innerHTML = repl.bold();
+      if (event.shiftKey) {
+        sec.innerHTML = norm;
+      }
+    }
+
+    thir.onclick = function thir() {
+      thir.innerHTML = repl.bold();
+      if (event.shiftKey) {
+        thir.innerHTML = norm;
+      }
+    }
+
+    fou.onclick = function fou() {
+      fou.innerHTML = repl.bold();
+      if (event.shiftKey) {
+        fou.innerHTML = norm;
+      }
+    }
+
+    fif.onclick = function fif() {
+      fif.innerHTML = repl.bold();
+      if (event.shiftKey) {
+        fif.innerHTML = norm;
+      }
+    }
 
 
-      // function bold() {
-      //   document.getElementById('t4').innerHTML = inserttext.bold();
-      //   if (event.shiftKey) {
-      //     document.getElementById('t4').innerHTML = inserttext;
-      //   }
-      //
-      // }
+
 
     </script>
+
 
 
 
