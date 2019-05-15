@@ -48,15 +48,18 @@
     </div>
 
     <script>
+    var string = document.getElementById("opdr3");
+
     document.getElementById("opdr3").onmouseover = function() {mouseOver()};
     document.getElementById("opdr3").onmouseout = function() {mouseOut()};
 
     function mouseOver() {
-      document.getElementById("opdr3").style.color = "red";
+      //console.log(string.style.fontStyle);
+      string.style.fontStyle = "italic";
     }
-    
+
     function mouseOut() {
-      document.getElementById("opdr3").style.color = "black";
+      string.style.fontStyle = "";
     }
     </script>
 
