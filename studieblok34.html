@@ -64,58 +64,34 @@
     <h3>Opdracht 4:</h3>
     <!-- Kevin -->
 
-    <div id="fir">Klik op deze tekst</div>
-    <div id="sec">Klik op deze tekst</div>
-    <div id="thir">Klik op deze tekst</div>
-    <div id="fou">Klik op deze tekst</div>
-    <div id="fif">Klik op deze tekst</div>
+      <div id="fir" >Klik op deze tekst</div>
+      <div id="sec" >Klik op deze tekst</div>
+      <div id="thir" >Klik op deze tekst</div>
+      <div id="fou" >Klik op deze tekst</div>
+      <div id="fif" >Klik op deze tekst</div>
 
     <script>
 
     var norm = "Klik op deze tekst";
     var repl = "Shift-Klik op deze tekst";
-    var fir = document.getElementById('fir');
-    var sec = document.getElementById('sec');
-    var thir = document.getElementById('thir');
-    var fou = document.getElementById('fou');
-    var fif = document.getElementById('fif');
 
-    
 
-    // fir.onclick = function first() {
-    //   fir.innerHTML = repl.bold();
-    //   if (event.shiftKey) {
-    //     fir.innerHTML = norm;
-    //   }
-    // }
-    //
-    // sec.onclick = function second() {
-    //   sec.innerHTML = repl.bold();
-    //   if (event.shiftKey) {
-    //     sec.innerHTML = norm;
-    //   }
-    // }
-    //
-    // thir.onclick = function third() {
-    //   thir.innerHTML = repl.bold();
-    //   if (event.shiftKey) {
-    //     thir.innerHTML = norm;
-    //   }
-    // }
-    //
-    // fou.onclick = function fourth() {
-    //   fou.innerHTML = repl.bold();
-    //   if (event.shiftKey) {
-    //     fou.innerHTML = norm;
-    //   }
-    // }
-    //
-    // fif.onclick = function fifth() {
-    //   fif.innerHTML = repl.bold();
-    //   if (event.shiftKey) {
-    //     fif.innerHTML = norm;
-    //   }
-    // }
+    var clickHandler = function() {
+      var objId = document.getElementById(this.id);
+      objId.style.fontWeight = "bold";
+      objId.innerHTML = repl;
+        if (event.shiftKey) {
+          objId.style.fontWeight = "normal";
+          objId.innerHTML = norm;
+        }
+    }
+
+    document.getElementById('fir').onclick = clickHandler;
+    document.getElementById('sec').onclick = clickHandler;
+    document.getElementById('thir').onclick = clickHandler;
+    document.getElementById('fou').onclick = clickHandler;
+    document.getElementById('fif').onclick = clickHandler;
+
 
 
 
