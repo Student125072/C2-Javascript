@@ -78,7 +78,7 @@
     var repl = "Shift-Klik op deze tekst";
 
 
-    var clickHandler = function() {
+    function clickHandler() {
       var objId = document.getElementById(this.id);
       objId.style.fontWeight = "bold";
       objId.innerHTML = repl;
@@ -93,10 +93,6 @@
     document.getElementById('thir').onclick = clickHandler;
     document.getElementById('fou').onclick = clickHandler;
     document.getElementById('fif').onclick = clickHandler;
-
-
-
-
 
     </script>
 
