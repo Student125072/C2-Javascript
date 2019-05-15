@@ -47,7 +47,18 @@
       Hello World!
     </div>
 
+    <script>
+    document.getElementById("opdr3").onmouseover = function() {mouseOver()};
+    document.getElementById("opdr3").onmouseout = function() {mouseOut()};
 
+    function mouseOver() {
+      document.getElementById("opdr3").style.color = "red";
+    }
+    
+    function mouseOut() {
+      document.getElementById("opdr3").style.color = "black";
+    }
+    </script>
 
 
 
