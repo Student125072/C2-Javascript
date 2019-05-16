@@ -119,5 +119,45 @@
     <h3> Opdracht 7: </h3>
     <!-- Jesper -->
 
+
+    <h3>Opdracht 8:</h3>
+    <!-- Kevin -->
+
+    <div id="opdr8">
+      Klik hier
+      <p id="namesEight"></p>
+    </div>
+
+      <input style="display:none;" type="text" id="nameInput" placeholder="Naam......">
+      <button type="button" style="display:none;" id="nameButton">Stuur</button>
+
+    <script>
+
+      document.getElementById('opdr8').onclick = function() {
+
+      //om de button en field te laten zien
+        document.getElementById('nameInput').style.display = "block";
+        document.getElementById('nameButton').style.display = "block";
+
+    }
+
+    document.getElementById('nameButton').onclick = function() {
+
+      var nameInput = document.getElementById('nameInput').value;
+      var naamArray = new Array();
+
+      naamArray.push(nameInput);
+
+      document.getElementById('namesEight').innerHTML = naamArray.toString();
+
+
+
+
+
+    }
+
+
+    </script>
+
   </body>
 </html>
