@@ -49,7 +49,9 @@
 
     <script>
     var string = document.getElementById("opdr3");
+    var translated = true;
 
+    document.getElementById("opdr3").onclick = clickTrans;
     document.getElementById("opdr3").onmouseover = function() {mouseOver()};
     document.getElementById("opdr3").onmouseout = function() {mouseOut()};
 
@@ -61,8 +63,16 @@
       string.style.fontStyle = "";
     }
 
-    document.getElementById("opdr3").onclick = clickTrans;
-    
+    function clickTrans() {
+      if (translated) {
+        document.getElementById("opdr3").innerHTML = "Hallo Wereld!";
+        translated = false;
+      }else {
+        document.getElementById("opdr3").innerHTML = "Hello World!";
+        translated = true;
+      }
+    }
+
     </script>
 
 
