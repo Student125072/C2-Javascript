@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3> Opdracht 5: </h3>
+    <!-- Jesper -->
+    <div onclick="showCoords(event)" id="opdr5css">
+      <style>
+      #opdr5css {
+        position: fixed;
+        padding: 0;
+        margin: 0;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+      }
+      </style>
+    </div>
+    <p id="opdr5"></p>
+    <script>
+    function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    document.getElementById("opdr5").innerHTML = coords;
+  }
+</script>
+  </body>
+</html>
