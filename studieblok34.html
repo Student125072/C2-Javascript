@@ -109,9 +109,24 @@
 
     <h3>Opdracht 6:</h3>
     <!-- Kevin -->
+    <input type="number" id="seconden" placeholder="aantal seconden..">
+    <button type="button" id="startTimer">Start</button>
+
+    <script>
+
+    document.getElementById('startTimer').onclick = function(){
+      var time = document.getElementById('seconden').value * 1000;
+
+      setTimeout(function() {
+
+        alert("Timer afgelopen!");
+
+        }, time);
+
+      }
 
 
-
+    </script>
 
 
   </body>
