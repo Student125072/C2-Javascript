@@ -151,6 +151,8 @@
 
     <script>
 
+      var naamArray = [];
+
       document.getElementById('opdr8').onclick = function() {
 
       //om de button en field te laten zien
@@ -162,13 +164,14 @@
     document.getElementById('nameButton').onclick = function() {
 
       var nameInput = document.getElementById('nameInput').value;
-      var naamArray = new Array();
 
       naamArray.push(nameInput);
 
-      document.getElementById('namesEight').innerHTML = naamArray.join(",");
+      document.getElementById('namesEight').innerHTML = naamArray.toString();
 
-
+      //om de button en field weer te laten verdwijnen om daarna weer op te kunnen roepen
+      document.getElementById('nameInput').style.display = "none";
+      document.getElementById('nameButton').style.display = "none";
 
     }
 
