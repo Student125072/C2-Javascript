@@ -48,10 +48,29 @@
     </div>
 
     <script>
+
     var string = document.getElementById("opdr3");
     var translated = true;
 
     document.getElementById("opdr3").onclick = clickTrans;
+<<<<<<< Updated upstream
+=======
+
+    //geef opdr3 als parameter mee en laat het veranderen
+    //door een andere string die ja na iedere if veranderd.
+    var stringx = "Hello World!";
+    function clickTrans(){
+      if (stringx = "Hello World!") {
+        document.getElementById("opdr3").innerHTML = "Hallo Wereld!"
+        stringx = "Hallo Wereld!";
+        return clickTrans();
+      }else {
+        document.getElementById("opdr3").innerHTML - "Hello World!"
+        stringx = "Hello World!";
+      }
+    }
+
+>>>>>>> Stashed changes
     document.getElementById("opdr3").onmouseover = function() {mouseOver()};
     document.getElementById("opdr3").onmouseout = function() {mouseOut()};
 
@@ -63,6 +82,7 @@
       string.style.fontStyle = "";
     }
 
+<<<<<<< Updated upstream
     function clickTrans() {
       if (translated) {
         document.getElementById("opdr3").innerHTML = "Hallo Wereld!";
@@ -73,6 +93,8 @@
       }
     }
 
+=======
+>>>>>>> Stashed changes
     </script>
 
 
@@ -151,7 +173,11 @@
 
     <script>
 
+<<<<<<< Updated upstream
       var naamArray = [];
+=======
+
+>>>>>>> Stashed changes
 
       document.getElementById('opdr8').onclick = function() {
 
