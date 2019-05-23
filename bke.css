@@ -4,8 +4,6 @@ font-family: 'rock salt', cursive;
 user-select: none;
 }
 
-html {background-image: url('../img/bg.png');}
-
 h2
 {
   font-size: 65px;
@@ -13,7 +11,7 @@ h2
   height: 155px;
 }
 
-span
+span, #XenO
 {
     font-size: 65px;
     margin-top: 20px;
@@ -38,13 +36,7 @@ div[id^="row-"] div:first-child {border-left: none;}
 div[id^="row-"] div:last-child {border-right: none;}
 div[id="row-1"] div {border-top: none;}
 div[id="row-3"] div {border-bottom: none;}
-/* div[id^="row-"] */
-{
-  clear: float;
-  width: 608px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
+
 div.board
 {
   width: 608px;
